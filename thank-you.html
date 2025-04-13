@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: rgba(0, 119, 255, 0.3);
+      --bg-dark: #0f172a;
+      --bg-darker: #0a0f2c;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(ellipse at top left, var(--bg-darker), var(--bg-dark));
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .thank-you-box {
+      position: relative;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 60px 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      max-width: 550px;
+      width: 90%;
+      z-index: 2;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      background: var(--primary);
+      color: white;
+      padding: 14px 30px;
+      border-radius: 100px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 0.3s ease all;
+    }
+
+    a:hover {
+      background: #3b82f6;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #60a5fa66;
+    }
+
+    /* SVG background circle blur */
+    .background-blur {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      top: -100px;
+      right: -150px;
+      background: radial-gradient(circle, #60a5fa33, transparent 70%);
+      filter: blur(100px);
+      z-index: 0;
+      animation: float 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(30px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-blur"></div>
+  <div class="thank-you-box">
+    <h1>Thank You!</h1>
+    <p>Your message has been successfully sent. <br> We’ll be in touch with you shortly.</p>
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>
