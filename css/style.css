@@ -1,7 +1,7 @@
 :root {
   --White: #fff;
   --Text: #3D3E3F;
-  --Primary: rgba(0, 119, 255, 0.15);
+  --Primary: rgba(172, 172, 172, 0.15);
   --Secondary: #1A1A1A;
   --Third: #EB664E;
   --Fourth: #1F4B43;
@@ -6834,7 +6834,7 @@ ul.grid-tags li a:hover {
   z-index: 1000000000000000000000;
   height: 100%;
   width: 100%;
-  background-color: #0a0f2c;
+  background-color: #000000;
 }
 .preload-container .middle {
   top: 30%;
@@ -7181,7 +7181,7 @@ ul.grid-tags li a:hover {
   padding-top: 0 !important;
 }
 #header_main.is-fixed.is-small .header-inner .header-inner-wrap {
-  background-color: var(--White);
+  background-color: black !important;
 }
 #header_main.is-fixed.type-home1.is-small {
   top: 20px;
